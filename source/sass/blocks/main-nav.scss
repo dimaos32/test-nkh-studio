@@ -1,0 +1,32 @@
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -2px -4px;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  padding: 2px 4px;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 12px 16px;
+  font-weight: 700;
+  color: $color-default-white;
+  background-color: $color-nhl;
+  border-radius: 4px;
+  transition:
+    background-color $default-transition-settings,
+    opacity $default-transition-settings;
+
+  &:hover,
+  &:focus {
+    background-color: $color-navy-blue;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
