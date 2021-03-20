@@ -1,0 +1,20 @@
+.task {
+  padding: 32px 0;
+  border-top: 4px solid $color-nhl;
+}
+
+.task__conditions {
+  margin: 0;
+  margin-bottom: 18px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.task__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 32px;
+  line-height: 1.12;
+  font-weight: 700;
+  text-align: center;
+}

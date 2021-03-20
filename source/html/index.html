@@ -18,10 +18,531 @@
     })
 
     <main>
-      <div class="container">
-        <p><a href="#" data-modal="feedback">modal--feedback link</a></p>
-        <p><a href="#" data-modal="success">modal--success link</a></p>
-      </div>
+      <section class="introduction">
+          <div class="container">
+            <h1 class="introduction__title">Тестовое задание для NKH Studio</h1>
+
+            <div class="introduction__desc">
+              <ol>
+                <li>
+                  <a class="introduction__link" href="#task1">Создать сетку каталога состоящую из 4х колонок и 2 рядов с помощью flex</a>
+                </li>
+                <li>
+                  <a class="introduction__link" href="#task2">Поменять направление осей с дефолтного состояния</li>
+                  </a>
+                <li>
+                  <a class="introduction__link" href="#task3">Выровнять один элемент по поперечной оси</a>
+                </li>
+                <li>
+                  <a class="introduction__link" href="#task4">Задать выравнивание ряду flex-end</a>
+                </li>
+                <li>
+                  <a class="introduction__link" href="#task5">Создать сетку каталога состоящую из 4х колонок и 2 рядов с помощью inline-block</a>
+                </li>
+                <li>
+                  <a class="introduction__link" href="#task6">Создать сетку каталога состоящую из 4х колонок и 2 рядов с помощью float</a>
+                </li>
+                <li>
+                  <a class="introduction__link" href="#task7">Создать html таблицу из двух рядов и 4 ячеек</a>
+                </li>
+                <li>
+                  <a class="introduction__link" href="#task8">Создать таблицу из двух рядов и 4 ячеек используя для разметки только div</a>
+                </li>
+                <li>
+                  <a class="introduction__link" href="#task9">Сделать обыкновенный аккордеон. Не важно JS или JQUERY, но обязательно с нуля.</a>
+                </li>
+              </ol>
+
+              <p>Вся разметка должна быть написана по БЭМ. Работу залить на github репозиторий > сделать его публичным > опубликовать страницу на github pages > дать ссылку на работу.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="task" id="task1">
+          <div class="container">
+            <h2 class="task__conditions">1. Создать сетку каталога состоящую из 4х колонок и 2 рядов с помощью flex</h2>
+            <div class="demo-box demo-box--task-1">
+              <ul class="demo-box__list">
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-boston-bruins",
+                    "title": "Boston Bruins",
+                    "color": "#ffb81c",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-buffalo-sabres",
+                    "title": "Buffalo Sabres",
+                    "color": "#003087",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-new-jersey-devils",
+                    "title": "New Jersey Devils",
+                    "color": "#c8102e",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-new-york-islanders",
+                    "title": "New York Islanders",
+                    "color": "#00539b",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-new-york-rangers",
+                    "title": "New York Rangers",
+                    "color": "#0033a0",
+                  })
+                </li>
+
+                <li  class="demo-box__item demo-box__item--own-behavior">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-philadelphia-flyers",
+                    "title": "Philadelphia Flyers",
+                    "color": "#fa4616",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-pittsburgh-penguins",
+                    "title": "Pittsburgh Penguins",
+                    "color": "#ffb81c",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-washington-capitals",
+                    "title": "Washington Capitals",
+                    "color": "#c8102e",
+                  })
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="task" id="task2">
+          <div class="container">
+            <h2 class="task__conditions">2. Поменять направление осей с дефолтного состояния</h2>
+            <div class="demo-box demo-box--task-2">
+              <ul class="demo-box__list">
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-boston-bruins",
+                    "title": "Boston Bruins",
+                    "color": "#ffb81c",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-buffalo-sabres",
+                    "title": "Buffalo Sabres",
+                    "color": "#003087",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-new-jersey-devils",
+                    "title": "New Jersey Devils",
+                    "color": "#c8102e",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-new-york-islanders",
+                    "title": "New York Islanders",
+                    "color": "#00539b",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-new-york-rangers",
+                    "title": "New York Rangers",
+                    "color": "#0033a0",
+                  })
+                </li>
+
+                <li  class="demo-box__item demo-box__item--own-behavior">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-philadelphia-flyers",
+                    "title": "Philadelphia Flyers",
+                    "color": "#fa4616",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-pittsburgh-penguins",
+                    "title": "Pittsburgh Penguins",
+                    "color": "#ffb81c",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-washington-capitals",
+                    "title": "Washington Capitals",
+                    "color": "#c8102e",
+                  })
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="task" id="task3">
+          <div class="container">
+            <h2 class="task__conditions">3. Выровнять один элемент по поперечной оси</h2>
+            <div class="demo-box demo-box--task-3">
+              <ul class="demo-box__list">
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-boston-bruins",
+                    "title": "Boston Bruins",
+                    "color": "#ffb81c",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-buffalo-sabres",
+                    "title": "Buffalo Sabres",
+                    "color": "#003087",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-new-jersey-devils",
+                    "title": "New Jersey Devils",
+                    "color": "#c8102e",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-new-york-islanders",
+                    "title": "New York Islanders",
+                    "color": "#00539b",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-new-york-rangers",
+                    "title": "New York Rangers",
+                    "color": "#0033a0",
+                  })
+                </li>
+
+                <li  class="demo-box__item demo-box__item--own-behavior">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-philadelphia-flyers",
+                    "title": "Philadelphia Flyers",
+                    "color": "#fa4616",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-pittsburgh-penguins",
+                    "title": "Pittsburgh Penguins",
+                    "color": "#ffb81c",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-washington-capitals",
+                    "title": "Washington Capitals",
+                    "color": "#c8102e",
+                  })
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="task" id="task4">
+          <div class="container">
+            <h2 class="task__conditions">4. Задать выравнивание ряду flex-end</h2>
+            <div class="demo-box demo-box--task-4">
+              <ul class="demo-box__list">
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-boston-bruins",
+                    "title": "Boston Bruins",
+                    "color": "#ffb81c",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-buffalo-sabres",
+                    "title": "Buffalo Sabres",
+                    "color": "#003087",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-new-jersey-devils",
+                    "title": "New Jersey Devils",
+                    "color": "#c8102e",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-new-york-islanders",
+                    "title": "New York Islanders",
+                    "color": "#00539b",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-new-york-rangers",
+                    "title": "New York Rangers",
+                    "color": "#0033a0",
+                  })
+                </li>
+
+                <li  class="demo-box__item demo-box__item--own-behavior">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-philadelphia-flyers",
+                    "title": "Philadelphia Flyers",
+                    "color": "#fa4616",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-pittsburgh-penguins",
+                    "title": "Pittsburgh Penguins",
+                    "color": "#ffb81c",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-washington-capitals",
+                    "title": "Washington Capitals",
+                    "color": "#c8102e",
+                  })
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="task" id="task5">
+          <div class="container">
+            <h2 class="task__conditions">5. Создать сетку каталога состоящую из 4х колонок и 2 рядов с помощью inline-block</h2>
+            <div class="demo-box demo-box--task-5">
+              <ul class="demo-box__list">
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-boston-bruins",
+                    "title": "Boston Bruins",
+                    "color": "#ffb81c",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-buffalo-sabres",
+                    "title": "Buffalo Sabres",
+                    "color": "#003087",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-new-jersey-devils",
+                    "title": "New Jersey Devils",
+                    "color": "#c8102e",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-new-york-islanders",
+                    "title": "New York Islanders",
+                    "color": "#00539b",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-new-york-rangers",
+                    "title": "New York Rangers",
+                    "color": "#0033a0",
+                  })
+                </li>
+
+                <li  class="demo-box__item demo-box__item--own-behavior">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-philadelphia-flyers",
+                    "title": "Philadelphia Flyers",
+                    "color": "#fa4616",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-pittsburgh-penguins",
+                    "title": "Pittsburgh Penguins",
+                    "color": "#ffb81c",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-washington-capitals",
+                    "title": "Washington Capitals",
+                    "color": "#c8102e",
+                  })
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="task" id="task6">
+          <div class="container">
+            <h2 class="task__conditions">6. Создать сетку каталога состоящую из 4х колонок и 2 рядов с помощью float</h2>
+            <div class="demo-box demo-box--task-6">
+              <ul class="demo-box__list">
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-boston-bruins",
+                    "title": "Boston Bruins",
+                    "color": "#ffb81c",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-buffalo-sabres",
+                    "title": "Buffalo Sabres",
+                    "color": "#003087",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-new-jersey-devils",
+                    "title": "New Jersey Devils",
+                    "color": "#c8102e",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-new-york-islanders",
+                    "title": "New York Islanders",
+                    "color": "#00539b",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-new-york-rangers",
+                    "title": "New York Rangers",
+                    "color": "#0033a0",
+                  })
+                </li>
+
+                <li  class="demo-box__item demo-box__item--own-behavior">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-philadelphia-flyers",
+                    "title": "Philadelphia Flyers",
+                    "color": "#fa4616",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-pittsburgh-penguins",
+                    "title": "Pittsburgh Penguins",
+                    "color": "#ffb81c",
+                  })
+                </li>
+
+                <li  class="demo-box__item">
+                  @@include("source/html/components/nhl-card.html", {
+                    "logo": "#nhl-washington-capitals",
+                    "title": "Washington Capitals",
+                    "color": "#c8102e",
+                  })
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="task" id="task7">
+          <div class="container">
+            <h2 class="task__conditions">7. Создать html таблицу из двух рядов и 4 ячеек</h2>
+            <div class="demo-box demo-box--task-7">
+              <table class="demo-box__table">
+                <tr class="demo-box__table-row">
+                  <td class="demo-box__table-cell">Boston Bruins</td>
+                  <td class="demo-box__table-cell">Buffalo Sabres</td>
+                  <td class="demo-box__table-cell">New Jersey Devils</td>
+                  <td class="demo-box__table-cell">New York Islanders</td>
+                </tr>
+
+                <tr class="demo-box__table-row">
+                  <td class="demo-box__table-cell">New York Rangers</td>
+                  <td class="demo-box__table-cell">Philadelphia Flyers</td>
+                  <td class="demo-box__table-cell">Pittsburgh Penguins</td>
+                  <td class="demo-box__table-cell">Washington Capitals</td>
+                </tr>
+              </table>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="task" id="task8">
+          <div class="container">
+            <h2 class="task__conditions">8. Создать таблицу из двух рядов и 4 ячеек используя для разметки только div</h2>
+            <div class="demo-box demo-box--task-8">
+              <div class="demo-box__pseudo-table">
+                <div class="demo-box__pseudo-table-row">
+                  <div class="demo-box__pseudo-table-cell">Boston Bruins</div>
+                  <div class="demo-box__pseudo-table-cell">Buffalo Sabres</div>
+                  <div class="demo-box__pseudo-table-cell">New Jersey Devils</div>
+                  <div class="demo-box__pseudo-table-cell">New York Islanders</div>
+                </div>
+
+                <div class="demo-box__pseudo-table-row">
+                  <div class="demo-box__pseudo-table-cell">New York Rangers</div>
+                  <div class="demo-box__pseudo-table-cell">Philadelphia Flyers</div>
+                  <div class="demo-box__pseudo-table-cell">Pittsburgh Penguins</div>
+                  <div class="demo-box__pseudo-table-cell">Washington Capitals</div>
+                </div>
+              </div>
+              </ul>
+            </div>
+          </div>
+        </section>
     </main>
 
     @@include("source/html/base/footer.html")

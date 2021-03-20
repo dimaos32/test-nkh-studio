@@ -9,15 +9,12 @@ $color-transparent:               rgba(255, 255, 255, 0);
 
 // Base
 
-$color-black:                     #0e0e0e;
-$color-white:                     #f2f2f2;
-$color-blue:                      #2c39f2;
+$color-nhl:                       #0f0f0f;
 
+$color-midnight-blue:             #191970;
 $color-navy-blue:                 #0183da;
-
-// NHL
-
-$color-nhl:                     #0f0f0f;
+$color-papaya-whip:               #ffefd5;
+$color-peach-puff:                #ffdab9;
 
 // Typography
 //---------------------------------
@@ -35,7 +32,7 @@ $default-transition-settings:       0.3s ease;
 $viewport--sm:                      320px;
 $viewport--md:                      768px;
 $viewport--lg:                      1024px;
-$viewport--xl:                      1200px;
+$viewport--xl:                      1280px;
 $viewport--xxl:                     1440px;
 
 // Retina

@@ -1,0 +1,129 @@
+.demo-box {
+  padding: 8px;
+  background-color: $color-peach-puff;
+  border-radius: 4px;
+
+  @include viewport--md {
+    padding: 4px;
+  }
+
+  @include viewport--sm {
+    padding: 2px;
+  }
+}
+
+.demo-box__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .demo-box--task-2 & {
+    flex-direction: row-reverse;
+  }
+
+  .demo-box--task-3 & {
+    height: 700px;
+
+    @include viewport--lg {
+      height: 550px;
+    }
+
+    @include viewport--md {
+      height: 400px;
+    }
+
+    @include viewport--sm {
+      height: 200px;
+    }
+  }
+
+  .demo-box--task-4 & {
+    justify-content: flex-end;
+  }
+
+  .demo-box--task-5 & {
+    display: block;
+    font-size: 0;
+  }
+
+  .demo-box--task-6 & {
+    display: block;
+
+    // Не стал выделять отдельный класс clearfix, т.к. использую его единожды для примера.
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+}
+
+.demo-box__item {
+  width: percentage(2/9);
+
+  &--own-behavior {
+    align-self: flex-end;
+  }
+
+  .demo-box--task-5 & {
+    display: inline-block;
+  }
+
+  .demo-box--task-6 & {
+    float: left;
+  }
+}
+
+.demo-box__table {
+  border-collapse: collapse;
+  border: 2px solid $color-midnight-blue;
+}
+
+.demo-box__table-cell {
+  width: 200px;
+  padding: 8px;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid $color-midnight-blue;
+
+  @include viewport--md {
+    width: 160px;
+    font-size: 14px;
+  }
+
+  @include viewport--sm {
+    width: 70px;
+    font-size: 9px;
+  }
+}
+
+.demo-box__pseudo-table {
+  display: table;
+  border-collapse: collapse;
+  border: 2px solid $color-midnight-blue;
+}
+
+.demo-box__pseudo-table-row {
+  display: table-row;
+}
+
+.demo-box__pseudo-table-cell {
+  display: table-cell;
+  width: 200px;
+  padding: 8px;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid $color-midnight-blue;
+
+  @include viewport--md {
+    width: 160px;
+    font-size: 14px;
+  }
+
+  @include viewport--sm {
+    width: 70px;
+    font-size: 9px;
+  }
+}

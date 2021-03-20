@@ -323,7 +323,8 @@ template {
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  scroll-behavior: smooth; }
 
 html,
 body {
@@ -340,7 +341,7 @@ body {
   line-height: 1.5;
   font-family: "Verdana", "Arial", sans-serif;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #ffefd5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -499,7 +500,7 @@ button,
   @media (max-width: 1439px) {
     .container {
       padding: 0 60px; } }
-  @media (max-width: 1199px) {
+  @media (max-width: 1279px) {
     .container {
       padding: 0 32px; } }
   @media (max-width: 1023px) {
@@ -518,13 +519,10 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  @media (max-width: 1199px) {
+  @media (max-width: 1279px) {
     .header__container {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -635,3 +633,206 @@ button,
     background-color: #0183da; }
   .main-nav__link:active {
     opacity: 0.6; }
+
+.introduction {
+  padding: 32px 0; }
+
+.introduction__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 700; }
+
+.introduction__link:hover, .introduction__link:focus {
+  text-decoration: underline; }
+
+.introduction__link:active {
+  opacity: 0.6; }
+
+.task {
+  padding: 32px 0;
+  border-top: 4px solid #0f0f0f; }
+
+.task__conditions {
+  margin: 0;
+  margin-bottom: 18px;
+  font-size: 20px;
+  font-weight: 700; }
+
+.task__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 32px;
+  line-height: 1.12;
+  font-weight: 700;
+  text-align: center; }
+
+.nhl-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 240px;
+  min-height: 240px;
+  margin: 8px auto;
+  padding: 24px;
+  border-radius: 4px; }
+  @media (max-width: 1279px) {
+    .nhl-card {
+      width: 180px;
+      min-height: 180px;
+      padding: 18px; } }
+  @media (max-width: 1023px) {
+    .nhl-card {
+      width: 120px;
+      min-height: 120px;
+      margin: 4px auto;
+      padding: 12px; } }
+  @media (max-width: 767px) {
+    .nhl-card {
+      width: 60px;
+      min-height: 60px;
+      margin: 2px auto;
+      padding: 6px; } }
+
+.nhl-card__logo {
+  display: block;
+  margin: 0 auto;
+  width: 180px;
+  height: 120px; }
+  @media (max-width: 1279px) {
+    .nhl-card__logo {
+      width: 135px;
+      height: 90px; } }
+  @media (max-width: 1023px) {
+    .nhl-card__logo {
+      width: 90px;
+      height: 60px; } }
+  @media (max-width: 767px) {
+    .nhl-card__logo {
+      width: 45px;
+      height: 30px; } }
+
+.nhl-card__title {
+  margin: 0;
+  margin-top: auto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center; }
+  @media (max-width: 1279px) {
+    .nhl-card__title {
+      font-size: 16px; } }
+  @media (max-width: 1023px) {
+    .nhl-card__title {
+      font-weight: 400;
+      font-size: 12px; } }
+  @media (max-width: 767px) {
+    .nhl-card__title {
+      font-size: 9px; } }
+
+.demo-box {
+  padding: 8px;
+  background-color: #ffdab9;
+  border-radius: 4px; }
+  @media (max-width: 1023px) {
+    .demo-box {
+      padding: 4px; } }
+  @media (max-width: 767px) {
+    .demo-box {
+      padding: 2px; } }
+
+.demo-box__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .demo-box--task-2 .demo-box__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
+  .demo-box--task-3 .demo-box__list {
+    height: 700px; }
+    @media (max-width: 1279px) {
+      .demo-box--task-3 .demo-box__list {
+        height: 550px; } }
+    @media (max-width: 1023px) {
+      .demo-box--task-3 .demo-box__list {
+        height: 400px; } }
+    @media (max-width: 767px) {
+      .demo-box--task-3 .demo-box__list {
+        height: 200px; } }
+  .demo-box--task-4 .demo-box__list {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .demo-box--task-5 .demo-box__list {
+    display: block;
+    font-size: 0; }
+  .demo-box--task-6 .demo-box__list {
+    display: block; }
+    .demo-box--task-6 .demo-box__list::after {
+      content: "";
+      display: table;
+      clear: both; }
+
+.demo-box__item {
+  width: 22.22222%; }
+  .demo-box__item--own-behavior {
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
+  .demo-box--task-5 .demo-box__item {
+    display: inline-block; }
+  .demo-box--task-6 .demo-box__item {
+    float: left; }
+
+.demo-box__table {
+  border-collapse: collapse;
+  border: 2px solid #191970; }
+
+.demo-box__table-cell {
+  width: 200px;
+  padding: 8px;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #191970; }
+  @media (max-width: 1023px) {
+    .demo-box__table-cell {
+      width: 160px;
+      font-size: 14px; } }
+  @media (max-width: 767px) {
+    .demo-box__table-cell {
+      width: 70px;
+      font-size: 9px; } }
+
+.demo-box__pseudo-table {
+  display: table;
+  border-collapse: collapse;
+  border: 2px solid #191970; }
+
+.demo-box__pseudo-table-row {
+  display: table-row; }
+
+.demo-box__pseudo-table-cell {
+  display: table-cell;
+  width: 200px;
+  padding: 8px;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #191970; }
+  @media (max-width: 1023px) {
+    .demo-box__pseudo-table-cell {
+      width: 160px;
+      font-size: 14px; } }
+  @media (max-width: 767px) {
+    .demo-box__pseudo-table-cell {
+      width: 70px;
+      font-size: 9px; } }

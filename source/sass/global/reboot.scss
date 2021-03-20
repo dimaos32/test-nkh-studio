@@ -6,6 +6,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -26,7 +27,7 @@ body {
   font-family: $font-family--default;
   color: $color-default-black;
 
-  background-color: $color-default-white;
+  background-color: $color-papaya-whip;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
