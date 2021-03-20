@@ -136,4 +136,8 @@
 
 .demo-box__accordions-item {
   width: 500px;
+
+  @include viewport--sm {
+    width: 284px;
+  }
 }

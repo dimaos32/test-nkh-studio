@@ -18,7 +18,7 @@
     })
 
     <main>
-      <section class="introduction">
+      <section class="introduction" id="begin">
           <div class="container">
             <h1 class="introduction__title">Тестовое задание для NKH Studio</h1>
 
@@ -128,6 +128,8 @@
                 </li>
               </ul>
             </div>
+
+            <a class="task__link" href="#begin">К началу</a>
           </div>
         </section>
 
@@ -201,6 +203,8 @@
                 </li>
               </ul>
             </div>
+
+            <a class="task__link" href="#begin">К началу</a>
           </div>
         </section>
 
@@ -274,6 +278,8 @@
                 </li>
               </ul>
             </div>
+
+            <a class="task__link" href="#begin">К началу</a>
           </div>
         </section>
 
@@ -347,6 +353,8 @@
                 </li>
               </ul>
             </div>
+
+            <a class="task__link" href="#begin">К началу</a>
           </div>
         </section>
 
@@ -420,6 +428,8 @@
                 </li>
               </ul>
             </div>
+
+            <a class="task__link" href="#begin">К началу</a>
           </div>
         </section>
 
@@ -493,6 +503,8 @@
                 </li>
               </ul>
             </div>
+
+            <a class="task__link" href="#begin">К началу</a>
           </div>
         </section>
 
@@ -516,6 +528,8 @@
                 </tr>
               </table>
             </div>
+
+            <a class="task__link" href="#begin">К началу</a>
           </div>
         </section>
 
@@ -539,6 +553,8 @@
                 </div>
               </div>
             </div>
+
+            <a class="task__link" href="#begin">К началу</a>
           </div>
         </section>
 
@@ -551,9 +567,38 @@
                   <button type="button" class="accordion__btn">Top points</button>
 
                   <ul class="accordion__content">
-                    <li class="accordion__content-item">Содержимое 1</li>
-                    <li class="accordion__content-item">Содержимое 2</li>
-                    <li class="accordion__content-item">Содержимое 3</li>
+                    <li class="accordion__content-item">
+                      @@include("source/html/components/player-card.html", {
+                        "name": "Connor McDavid",
+                        "photo": "player-connor-mcdavid",
+                        "score": "58",
+                        "logo": "#nhl-edmonton-oilers",
+                        "team": "Edmonton Oilers",
+                        "color": "#fc4c02",
+                      })
+                    </li>
+
+                    <li class="accordion__content-item">
+                      @@include("source/html/components/player-card.html", {
+                        "name": "Leon Draisaitl",
+                        "photo": "player-leon-draisaitl",
+                        "score": "49",
+                        "logo": "#nhl-edmonton-oilers",
+                        "team": "Edmonton Oilers",
+                        "color": "#fc4c02",
+                      })
+                    </li>
+
+                    <li class="accordion__content-item">
+                      @@include("source/html/components/player-card.html", {
+                        "name": "Patrick Kane",
+                        "photo": "player-patrick-kane",
+                        "score": "42",
+                        "logo": "#nhl-chicago-blackhawks",
+                        "team": "Chicago Blackhawks",
+                        "color": "#c8102e",
+                      })
+                    </li>
                   </ul>
                 </li>
 
@@ -561,9 +606,38 @@
                   <button type="button" class="accordion__btn">Top goals</button>
 
                   <ul class="accordion__content">
-                    <li class="accordion__content-item">Содержимое 4</li>
-                    <li class="accordion__content-item">Содержимое 5</li>
-                    <li class="accordion__content-item">Содержимое 6</li>
+                    <li class="accordion__content-item">
+                      @@include("source/html/components/player-card.html", {
+                        "name": "Auston Matthews",
+                        "photo": "player-auston-matthews",
+                        "score": "21",
+                        "logo": "#nhl-toronto-maple-leafs",
+                        "team": "Toronto Maple Leafs",
+                        "color": "#003d7d",
+                      })
+                    </li>
+
+                    <li class="accordion__content-item">
+                      @@include("source/html/components/player-card.html", {
+                        "name": "Connor McDavid",
+                        "photo": "player-connor-mcdavid",
+                        "score": "20",
+                        "logo": "#nhl-edmonton-oilers",
+                        "team": "Edmonton Oilers",
+                        "color": "#fc4c02",
+                      })
+                    </li>
+
+                    <li class="accordion__content-item">
+                      @@include("source/html/components/player-card.html", {
+                        "name": "Tyler Toffoli",
+                        "photo": "player-tyler-toffoli",
+                        "score": "18",
+                        "logo": "#nhl-montreal-canadiens",
+                        "team": "&nbsp;Montréal Canadiens",
+                        "color": "#001e62",
+                      })
+                    </li>
                   </ul>
                 </li>
 
@@ -571,13 +645,44 @@
                   <button type="button" class="accordion__btn">Top assists</button>
 
                   <ul class="accordion__content">
-                    <li class="accordion__content-item">Содержимое 7</li>
-                    <li class="accordion__content-item">Содержимое 8</li>
-                    <li class="accordion__content-item">Содержимое 9</li>
+                    <li class="accordion__content-item">
+                      @@include("source/html/components/player-card.html", {
+                        "name": "Connor McDavid",
+                        "photo": "player-connor-mcdavid",
+                        "score": "38",
+                        "logo": "#nhl-edmonton-oilers",
+                        "team": "Edmonton Oilers",
+                        "color": "#fc4c02",
+                      })
+                    </li>
+
+                    <li class="accordion__content-item">
+                      @@include("source/html/components/player-card.html", {
+                        "name": "Leon Draisaitl",
+                        "photo": "player-leon-draisaitl",
+                        "score": "32",
+                        "logo": "#nhl-edmonton-oilers",
+                        "team": "Edmonton Oilers",
+                        "color": "#fc4c02",
+                      })
+                    </li>
+
+                    <li class="accordion__content-item">
+                      @@include("source/html/components/player-card.html", {
+                        "name": "Patrick Kane",
+                        "photo": "player-patrick-kane",
+                        "score": "30",
+                        "logo": "#nhl-chicago-blackhawks",
+                        "team": "Chicago Blackhawks",
+                        "color": "#c8102e",
+                      })
+                    </li>
                   </ul>
                 </li>
               </ul>
             </div>
+
+            <a class="task__link" href="#begin">К началу</a>
           </div>
         </section>
     </main>

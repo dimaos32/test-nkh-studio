@@ -18,3 +18,18 @@
   font-weight: 700;
   text-align: center;
 }
+
+.task__link {
+  display: block;
+  width: fit-content;
+  margin: 24px auto 0;
+  padding: 10px;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

@@ -550,6 +550,12 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (max-width: 767px) {
+    .footer__container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .footer__partner-link:active {
   opacity: 0.6; }
@@ -569,6 +575,13 @@ button,
   .footer__copyright p {
     margin: 0;
     font-weight: 700; }
+  @media (max-width: 767px) {
+    .footer__copyright {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-top: 24px; } }
 
 .footer__mail-link {
   padding: 12px 16px;
@@ -589,6 +602,9 @@ button,
   margin-right: -8px;
   padding: 0;
   list-style: none; }
+  @media (max-width: 767px) {
+    .footer__social {
+      margin-left: -8px; } }
 
 .footer__social-item {
   padding: 0 8px; }
@@ -666,6 +682,18 @@ button,
   line-height: 1.12;
   font-weight: 700;
   text-align: center; }
+
+.task__link {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 24px auto 0;
+  padding: 10px; }
+  .task__link:hover, .task__link:focus {
+    text-decoration: underline; }
+  .task__link:active {
+    opacity: 0.6; }
 
 .nhl-card {
   display: -webkit-box;
@@ -844,11 +872,17 @@ button,
 
 .demo-box__accordions-item {
   width: 500px; }
+  @media (max-width: 767px) {
+    .demo-box__accordions-item {
+      width: 284px; } }
 
 .accordion {
   overflow: hidden; }
   .accordion:not(:last-child) {
     margin-bottom: 16px; }
+  @media (max-width: 767px) {
+    .accordion:not(:last-child) {
+      margin-bottom: 4px; } }
 
 .accordion__btn {
   display: block;
@@ -859,6 +893,7 @@ button,
   line-height: 1.25;
   -moz-text-align-last: left;
        text-align-last: left;
+  text-transform: uppercase;
   color: #0f0f0f;
   background-color: transparent;
   border: 4px solid #0f0f0f;
@@ -886,3 +921,87 @@ button,
   transition: max-height 0.3s ease; }
   .accordion--active .accordion__content {
     overflow: visible; }
+
+.accordion__content-item {
+  padding: 16px 12px 0; }
+  @media (max-width: 767px) {
+    .accordion__content-item {
+      padding: 4px;
+      padding-bottom: 0; } }
+
+.player-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 8px;
+  border-radius: 4px; }
+  @media (max-width: 767px) {
+    .player-card {
+      padding: 0 4px; } }
+
+.player-card__photo {
+  width: 84px;
+  height: 84px;
+  border: 2px solid #ffffff;
+  border-radius: 50%; }
+  @media (max-width: 767px) {
+    .player-card__photo {
+      width: 42px;
+      height: 42px; } }
+
+.player-card__data {
+  margin-left: 12px;
+  margin-right: auto; }
+  @media (max-width: 767px) {
+    .player-card__data {
+      margin-left: 8px; } }
+
+.player-card__name {
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14;
+  color: #ffffff; }
+  @media (max-width: 767px) {
+    .player-card__name {
+      margin-bottom: 2px;
+      font-size: 16px;
+      line-height: 1.25; } }
+
+.player-card__team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .player-card__team svg {
+    width: 45px;
+    height: 30px; }
+  .player-card__team p {
+    margin: 0;
+    color: #ffffff; }
+  @media (max-width: 767px) {
+    .player-card__team svg {
+      width: 30px;
+      height: 20px; }
+    .player-card__team p {
+      font-size: 12px;
+      line-height: 1.33; } }
+
+.player-card__score {
+  margin: 0;
+  font-weight: 700;
+  font-size: 92px;
+  line-height: 1;
+  color: #ffffff; }
+  @media (max-width: 767px) {
+    .player-card__score {
+      font-size: 46px; } }

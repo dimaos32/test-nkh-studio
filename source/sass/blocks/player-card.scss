@@ -1,0 +1,87 @@
+.player-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+  border-radius: 4px;
+
+  @include viewport--sm {
+    padding: 0 4px;
+  }
+}
+
+.player-card__photo {
+  width: 84px;
+  height: 84px;
+  border: 2px solid $color-default-white;
+  border-radius: 50%;
+
+  @include viewport--sm {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.player-card__data {
+  margin-left: 12px;
+  margin-right: auto;
+
+  @include viewport--sm {
+    margin-left: 8px;
+  }
+}
+
+.player-card__name {
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14;
+  color: $color-default-white;
+
+  @include viewport--sm {
+    margin-bottom: 2px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.player-card__team {
+  display: flex;
+  align-items: center;
+
+  svg {
+    width: 45px;
+    height: 30px;
+  }
+
+  p {
+    margin: 0;
+    color: $color-default-white;
+  }
+
+  @include viewport--sm {
+
+    svg {
+      width: 30px;
+      height: 20px;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 1.33;
+    }
+  }
+}
+
+.player-card__score {
+  margin: 0;
+  font-weight: 700;
+  font-size: 92px;
+  line-height: 1;
+  color: $color-default-white;
+
+  @include viewport--sm {
+    font-size: 46px;
+  }
+}

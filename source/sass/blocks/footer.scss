@@ -8,6 +8,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include viewport--sm {
+    flex-direction: column;
+  }
 }
 
 .footer__partner-link {
@@ -29,6 +33,11 @@
   p {
     margin: 0;
     font-weight: 700;
+  }
+
+  @include viewport--sm {
+    flex-direction: column;
+    margin-top: 24px;
   }
 }
 
@@ -56,6 +65,10 @@
   margin-right: -8px;
   padding: 0;
   list-style: none;
+
+  @include viewport--sm {
+    margin-left:-8px;
+  }
 }
 
 .footer__social-item {
