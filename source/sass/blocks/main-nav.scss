@@ -11,11 +11,9 @@
 }
 
 .main-nav__link {
-  display: block;
   padding: 12px 16px;
   font-weight: 700;
   color: $color-default-white;
-  background-color: $color-nhl;
   border-radius: 4px;
   transition:
     background-color $default-transition-settings,

@@ -538,9 +538,78 @@ button,
   font-weight: 700; }
 
 .footer {
-  min-height: 100px;
-  padding: 0 60px;
-  background-color: #2c39f2; }
+  padding: 32px 0;
+  color: #ffffff;
+  background-color: #0f0f0f; }
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.footer__partner-link:active {
+  opacity: 0.6; }
+
+.footer__partner-link svg {
+  display: block;
+  width: 106px;
+  height: 44px; }
+
+.footer__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .footer__copyright p {
+    margin: 0;
+    font-weight: 700; }
+
+.footer__mail-link {
+  padding: 12px 16px;
+  color: #ffffff;
+  border-radius: 4px;
+  -webkit-transition: background-color 0.3s ease, opacity 0.3s ease;
+  transition: background-color 0.3s ease, opacity 0.3s ease; }
+  .footer__mail-link:hover, .footer__mail-link:focus {
+    background-color: #0183da; }
+  .footer__mail-link:active {
+    opacity: 0.6; }
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 24px;
+  margin-right: -8px;
+  padding: 0;
+  list-style: none; }
+
+.footer__social-item {
+  padding: 0 8px; }
+
+.footer__social-link {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 4px;
+  -webkit-transition: background-color 0.3s ease, opacity 0.3s ease;
+  transition: background-color 0.3s ease, opacity 0.3s ease; }
+  .footer__social-link:hover, .footer__social-link:focus {
+    background-color: #0183da; }
+  .footer__social-link:active {
+    opacity: 0.6; }
+  .footer__social-link svg {
+    display: block;
+    width: 24px;
+    height: 24px; }
 
 .main-nav__list {
   display: -webkit-box;
@@ -556,11 +625,9 @@ button,
   padding: 2px 4px; }
 
 .main-nav__link {
-  display: block;
   padding: 12px 16px;
   font-weight: 700;
   color: #ffffff;
-  background-color: #0f0f0f;
   border-radius: 4px;
   -webkit-transition: background-color 0.3s ease, opacity 0.3s ease;
   transition: background-color 0.3s ease, opacity 0.3s ease; }
